@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Meal } from './meal';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'deliverTOme';
+  meals: Meal[]=[];
+  
 }
