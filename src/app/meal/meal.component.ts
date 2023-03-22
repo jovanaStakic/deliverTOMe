@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Meal } from '../meal';
 
 @Component({
   selector: 'app-meal',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./meal.component.scss']
 })
 export class MealComponent {
+
+
+  @Input() ml:Meal;
 
 }
