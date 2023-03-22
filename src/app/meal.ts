@@ -2,8 +2,7 @@ export interface Meal {
     title: string;
     deliveryTime: number;
     picture: string,
-    oldPrice: number;
-    newPrice: number
+    price:number,
     desription: string;
     stars: number; 
 }

@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MealComponent } from './meal/meal.component';
 import { OrderComponent } from './order/order.component';
+import { PricePipe } from './pipe/price.pipe';
+import { BorderDirectiveDirective } from './directive/border-directive.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { OrderComponent } from './order/order.component';
     HeaderComponent,
     FooterComponent,
     MealComponent,
-    OrderComponent
+    OrderComponent,
+    PricePipe,
+    BorderDirectiveDirective
   ],
   imports: [
     BrowserModule,
