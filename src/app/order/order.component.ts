@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Meal } from '../meal';
 import { MealService } from '../services/meal.service';
+import { PorudzbinaService } from '../services/porudzbina.service';
 
 @Component({
   selector: 'app-order',
@@ -10,6 +11,7 @@ import { MealService } from '../services/meal.service';
 export class OrderComponent implements OnInit{
   meals: Meal[]=[];
   ml: Meal;
+  
 constructor(private mealService:MealService){
 
 }

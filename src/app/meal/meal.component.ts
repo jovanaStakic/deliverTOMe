@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { Meal } from '../meal';
+import { PorudzbinaService } from '../services/porudzbina.service';
 
 @Component({
   selector: 'app-meal',
@@ -7,8 +8,17 @@ import { Meal } from '../meal';
   styleUrls: ['./meal.component.scss']
 })
 export class MealComponent {
+   constructor(private porudzbinaService: PorudzbinaService){
 
-
+   }
   @Input() ml:Meal;
+  
+ 
+ addMeal(numb:string){
+  this.porudzbinaService.addMeal(Number(numb));
+ }
+ 
+
+  
 
 }

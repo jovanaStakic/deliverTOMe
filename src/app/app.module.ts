@@ -9,7 +9,10 @@ import { FooterComponent } from './footer/footer.component';
 import { MealComponent } from './meal/meal.component';
 import { OrderComponent } from './order/order.component';
 import { PricePipe } from './pipe/price.pipe';
-import { BorderDirectiveDirective } from './directive/border-directive.directive';
+import { BackgroundDirectiveDirective } from './directive/background-directive.directive';
+import { PorudzbinaComponent } from './porudzbina/porudzbina.component';
+import { NotReadyYetComponent } from './not-ready-yet/not-ready-yet.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { BorderDirectiveDirective } from './directive/border-directive.directive
     MealComponent,
     OrderComponent,
     PricePipe,
-    BorderDirectiveDirective
+    BackgroundDirectiveDirective,
+    PorudzbinaComponent,
+    NotReadyYetComponent,
+   
   ],
   imports: [
     BrowserModule,
