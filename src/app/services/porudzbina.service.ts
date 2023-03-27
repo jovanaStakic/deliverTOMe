@@ -6,7 +6,6 @@ import { Meal } from '../meal';
   providedIn: 'root'
 })
 export class PorudzbinaService {
-    porudzbinaMeals: Meal[]=[];
   brojJelaUPorudzbini:number=0;
     subject=new BehaviorSubject<number>(0);
   constructor() { 

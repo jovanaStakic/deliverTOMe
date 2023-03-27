@@ -7,5 +7,5 @@ import { AppRoutingModule } from '../app-routing.module';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-signal:boolean=false;
+
 }
